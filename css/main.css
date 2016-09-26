@@ -1,12 +1,13 @@
-.champMessage{
-  resize: none;
-}
-.container{
-  margin-top: 50px;
-}
-textarea.form-control{
-  height: 200px;
-}
-label{
-  text-align: center;
-}
+.champMessage {
+  resize: none; }
+
+.container {
+  margin-top: 50px; }
+
+textarea.form-control {
+  height: 200px; }
+
+label {
+  text-align: center; }
+
+/*# sourceMappingURL=main.css.map */

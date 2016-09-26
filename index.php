@@ -3,15 +3,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-<link rel="stylesheet" href="./css/main.css"/>
-    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css"/>
+
+    <title> formulaire </title>
   </head>
   <body>
+
+
+
     <div class="container">
-
-
       <div class="starter-template">
 
         <?php if(array_key_exists('errors', $_SESSION)): ?>
@@ -63,6 +64,7 @@
 
       </div>
     </div>
+    
   </body>
 </html>
 
