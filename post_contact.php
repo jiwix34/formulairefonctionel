@@ -25,10 +25,11 @@ if(!empty($errors)){
   header('Location: index.php');
 }else
 $_SESSION['success'] = 1;
-$message = $_POST['name']."\r\n". $_POST['prenom']."\r\n". $_POST['email']."\r\n" .$_POST['objet']. "\r\n" .$_POST['message'];
-$message = "Email de l'expéditeur : " . $_POST['email']."\r\n". "Nom de l'expéditeur : " . $_POST['name'] . "\r\n". "Prenom : " . $_POST['prenom'] . "\r\n". "Objet : " . $_POST['objet'] . "\r\n";
+$message = "Email de l'expéditeur : " . $_POST['email']."\r\n". "Nom de l'expéditeur : " . $_POST['name'] . "\r\n". "Prenom : " . $_POST['prenom'] . "\r\n";
+$message .= "Objet : " . $_POST['objet'] . "\r\n\n". "Message : " ."\r\n". $_POST["message"];
 $header = 'FROM: friedblattjimmytest@gmail.com';
 mail("friedblattjimmytest@gmail.com", $_POST['objet'],$message, $header);
+mail($_POST['email'], "confirmation de contact","j'ai bien reçu votre demande de contact je vous contact des que possible", $header);
 header('Location: index.php');
 
 
