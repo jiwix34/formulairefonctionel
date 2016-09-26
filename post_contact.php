@@ -29,7 +29,7 @@ $message = "Email de l'expéditeur : " . $_POST['email']."\r\n". "Nom de l'expé
 $message .= "Objet : " . $_POST['objet'] . "\r\n\n". "Message : " ."\r\n". $_POST["message"];
 $header = 'FROM: friedblattjimmytest@gmail.com';
 mail("friedblattjimmytest@gmail.com", $_POST['objet'],utf8_decode($message), $header);
-mail($_POST['email'], "confirmation de contact",utf8_decode("j'ai bien reçu votre demande de contact je vous contact des que possible"), $header);
+mail($_POST['email'], "confirmation de contact",utf8_decode("J'ai bien reçu votre demande.\r\n\nJe vous recontacte dès que possible."), $header);
 header('Location: index.php');
 
 
